@@ -1,1 +1,1 @@
-add_lunch_combo cm_dogo-eng
+add_lunch_combo tesla_dogo-userdebug

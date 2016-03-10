@@ -25,10 +25,17 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/dogo/include
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/dogo/bluetooth
 
-TARGET_KERNEL_CONFIG := cm_fusion3_dogo_defconfig
+TARGET_KERNEL_CONFIG := fusion3_dogo_defconfig
 
 # Healthd
-BACKLIGHT_PATH := /sys/class/leds/lm3533-lcd-bl/brightness
+BACKLIGHT_PATH := /sys/devices/i2c-0/0-0036/leds/lm3533-lcd-bl/brightness
+
+# Optimizations
+CLANG_O3 := true
+STRICT_ALIASING := false
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := true
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
@@ -39,3 +46,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 
 BOARD_HARDWARE_CLASS += device/sony/dogo/cmhw
+
+# TWRP
+TW_THEME := portrait_hdpi
+TW_BRIGHTNESS_PATH := /sys/devices/i2c-0/0-0036/leds/lm3533-lcd-bl/brightness
