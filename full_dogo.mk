@@ -33,7 +33,7 @@ $(call inherit-product, device/sony/dogo/dogo.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_dogo
-PRODUCT_DEVICE := dogo
+PRODUCT_DEVICE := C5503
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_MODEL := Xperia ZR
+PRODUCT_MODEL := C5503
