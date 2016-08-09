@@ -1,1 +1,1 @@
-add_lunch_combo du_dogo-userdebug
+add_lunch_combo tesla_dogo-userdebug
