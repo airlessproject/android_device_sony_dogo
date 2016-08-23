@@ -31,13 +31,13 @@ TARGET_KERNEL_CONFIG := fusion3_dogo_defconfig
 BACKLIGHT_PATH := /sys/devices/i2c-0/0-0036/leds/lm3533-lcd-bl/brightness
 
 # Optimizations
-CLANG_O3 := true
-STRICT_ALIASING := true
-KRAIT_TUNINGS := true
-GRAPHITE_OPTS := true
-ENABLE_GCCONLY := true
-ENABLE_SANITIZE := true
-USE_PIPE := true
+CLANG_O3 := false
+STRICT_ALIASING := false
+KRAIT_TUNINGS := false
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := false
+ENABLE_SANITIZE := false
+USE_PIPE := false
 
 # Partition sizes
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
